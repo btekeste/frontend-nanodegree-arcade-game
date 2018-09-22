@@ -62,8 +62,10 @@ var Engine = (function(global) {
 
         // The game restarts when the Player reaches the water.
         if (player.gameWon()) {
-            alert("Congrats!");
-            win.location.reload(true);
+            setTimeout(function(){
+                alert("Congrats!");
+                win.location.reload(true);
+            }, 1000);
         }
 
     }
